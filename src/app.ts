@@ -7,7 +7,7 @@ const app = express()
 const port = config.get<number>('port')
 
 app.listen(port, async () => {
-    logger.info(`App is running at port ${port}`)
-    await connect()
-    routes(app)
+  logger.info(`App is running at the  port ${port}`)
+  await connect()
+  routes(app)
 })
